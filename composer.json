@@ -1,0 +1,34 @@
+{
+    "name": "dantleech/fixgen",
+    "description": "Fixture generator for databases",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "nelmio/alice": "^2.2",
+        "doctrine/dbal": "^2.5",
+        "symfony/console": "^3.2",
+        "phpbench/container": "^1.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "DTL\\Fixgen\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DTL\\Fixgen\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use DTL\Fixgen\Extension\CoreExtension;
+use PhpBench\DependencyInjection\Container;
+
+$container = new Container([
+    CoreExtension::class
+], []);
+$container->init();
+$container->get('console.application')->run();
